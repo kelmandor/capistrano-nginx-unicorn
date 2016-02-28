@@ -34,5 +34,5 @@ namespace :unicorn do
 end
 
 namespace :deploy do
-  # after :publishing, "unicorn:restart"
+  after :publishing, "unicorn:stop"
 end
